@@ -38,31 +38,31 @@ puts"Create Suppliers"
 
 supplier1 = Supplier.create(:name => "Farmer Bob", :featured => true, :notes => "Farmer Bob is a specialist in growing watermelon, squash, and tomatoes", :title => "Farmer Bob's Market")
 supplier1.taxons = [supplier]
-supplier1.images.create(:attachment => File.open(File.join(Rails.root, "db", "seeds", "images", "chicken.jpg")))
+supplier1.supplier_images.create(:attachment => File.open(File.join(Rails.root, "db", "seeds", "images", "chicken.jpg")))
 supplier1.save
 
 supplier2 = Supplier.create(:name => "Maury", :title => "Moonshine Maury", :featured => true)
-supplier2.images.create(:attachment => File.open(File.join(Rails.root, "db", "seeds", "images", "goat.jpg")))
+supplier2.supplier_images.create(:attachment => File.open(File.join(Rails.root, "db", "seeds", "images", "goat.jpg")))
 supplier2.taxons = [supplier]
 supplier2.save
 
 supplier3 = Supplier.create(:name => "Fresh", :title => "Freshfully Farms", :featured => true)
-supplier3.images.create(:attachment => File.open(File.join(Rails.root, "db", "seeds", "images", "watermelon.jpg")))
+supplier3.supplier_images.create(:attachment => File.open(File.join(Rails.root, "db", "seeds", "images", "watermelon.jpg")))
 supplier3.taxons = [supplier]
 supplier3.save
 
 supplier4 = Supplier.create(:name => "Betty", :title => "Betty's Bees", :featured => true)
-supplier4.images.create(:attachment => File.open(File.join(Rails.root, "db", "seeds", "images", "flower.jpg")))
+supplier4.supplier_images.create(:attachment => File.open(File.join(Rails.root, "db", "seeds", "images", "flower.jpg")))
 supplier4.taxons = [supplier]
 supplier4.save
 
 supplier5 = Supplier.create(:name => "Larry", :title => "Larry's Lemonade", :description => "I am a supplier")
-supplier5.images.create(:attachment => File.open(File.join(Rails.root, "db", "seeds", "images", "cow.jpg")))
+supplier5.supplier_images.create(:attachment => File.open(File.join(Rails.root, "db", "seeds", "images", "cow.jpg")))
 supplier5.taxons = [supplier]
 supplier5.save
 
 supplier6 = Supplier.create(:name => "Gary", :title => "Gardener Gary")
-supplier6.images.create(:attachment => File.open(File.join(Rails.root, "db", "seeds", "images", "banana.jpg")))
+supplier6.supplier_images.create(:attachment => File.open(File.join(Rails.root, "db", "seeds", "images", "banana.jpg")))
 supplier6.taxons = [supplier]
 supplier6.save
 

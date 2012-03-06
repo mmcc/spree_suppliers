@@ -13,7 +13,7 @@ class Spree::Admin::SuppliersController < Spree::Admin::ResourceController
 
   def new
     @supplier = Spree::Supplier.new()
-    @supplier.images.build
+    @supplier.supplier_images.build
     @status = true
   end
 
@@ -32,7 +32,7 @@ class Spree::Admin::SuppliersController < Spree::Admin::ResourceController
 
   def edit
     @supplier = Spree::Supplier.find(params[:id])
-    @supplier.images.build
+    @supplier.supplier_images.build
   end
 
   def destroy

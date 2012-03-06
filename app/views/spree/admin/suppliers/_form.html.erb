@@ -46,7 +46,7 @@
 </table>
 
   <h3>Supplier Images</h3>
-  <%= f.fields_for :images do |image| %>
+  <%= f.fields_for :supplier_images do |image| %>
     <% if !image.object.attachment_file_name.nil? %>
       <span class="supplier_image">
         <%= image_tag(image.object.attachment.url) %>

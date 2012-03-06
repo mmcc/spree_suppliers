@@ -1,10 +1,10 @@
-<%= f.fields_for :images do |a| %>
-  <%= a.label :image %>
+<%= f.fields_for :supplier_images do |a| %>
+  <%= a.label :supplier_image %>
   <%= a.file_field :attachment %>
 <% end %>
 
 <% if @supplier %>
-  <% @supplier.images.each do |image| %>
+  <% @supplier.supplier_images.each do |image| %>
     <%= image_tag(image) %>
   <% end %>
 <% end %>

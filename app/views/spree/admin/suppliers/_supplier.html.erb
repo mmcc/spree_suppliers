@@ -16,9 +16,9 @@
 </ul>
 
 <h2>Images</h2>
-<% supplier.images.each do |image| %>
+<% supplier.supplier_images.each do |image| %>
   <ul>
-    <li><%= image_tag(image.attachment)%></li>
+    <li><%= image_tag(supplier_image.attachment)%></li>
   </ul>
 <% end %>
 
